@@ -208,6 +208,9 @@ span.underline {
 
 
 /* サービス */
+.service .item {
+  width: 30%;
+}
 .service .serviceBox {
   display: flex;
   justify-content: space-around;
