@@ -17,6 +17,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
   <!-- サムネイル読み込み -->
   <meta name="thumbnail" content="" />
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- BootstrapのCSS読み込み -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- BootstrapのJS読み込み -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!-- Reset css読み込み -->
   <link rel="stylesheet" href="stylesheet/destyle.css">
   <!-- Stylesheet読み込み -->
@@ -30,10 +36,9 @@
 <body>
   <!-- ヘッダー -->
   <header class="header width100" id="scrollArea">
-    <div class="container width100">
+    <div class="container">
       <div class="logo">
         <a class="goSection" href="#">
-          <img src="image/logo.png" alt="logo">
           <p class="logoText">〇〇印刷</p>
         </a>
       </div>
@@ -44,7 +49,7 @@
             <a class="goSection hoverChangeColor" href="#profile" ><li class="navItem">サービス</li></a>
             <a class="goSection hoverChangeColor" href="#service" ><li class="navItem">実績</li></a>
             <a class="goSection hoverChangeColor" href="#order" ><li class="navItem">依頼の流れ</li></a>
-            <a class="goSection hoverChangeColor" href="#contact" ><li class="navItem">お問い合わせ</li></a>
+            <a class="goSection hoverChangeColor" href="#contact" ><li class="navItem btn btn-success">お問い合わせ</li></a>
           </ul>
         </nav>
       </div>
@@ -78,7 +83,7 @@
     </section>
 
     <!-- コンセプト -->
-    <section class="solution  effectFadeIn" id="solution">
+    <section class="concept  effectFadeIn" id="concept">
       <div class="container">
         <div class="index">
           <h2>CONCEPT</h2>
@@ -91,7 +96,7 @@
         </div>
         <div class="box">
           <div class="conceptView">
-            <img src="image/meeting.jpg" alt="meeting">
+            <img src="image/about.jpg" alt="meeting">
           </div>
           <div class="conceptText">
             <p>
@@ -100,6 +105,7 @@
               これまでに培ってきた、お客様に寄り添いながら事業をプロモーションしていくノウハウを、より多くの方に役立てていただけたら幸いです。
             </p>
           </div>
+          <div class="clear"></div>
         </div>
         <div class="belowIndex whiteBack">
           <p>
@@ -121,7 +127,7 @@
             プロモーションに最適な戦略を提案します
           </p>
         </div>
-        <div class="box">
+        <div class="box d-flex justify-content-around">
           <div class="paper item">
             <div class="content">
               <h3>広告、パンフレット</h3>
@@ -400,8 +406,6 @@
   </footer>
 
   <!-- Javascript読み込み -->
-  <!-- jQuery読み込み -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- 自作javascriptの読み込み -->
   <script src="script/script.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->

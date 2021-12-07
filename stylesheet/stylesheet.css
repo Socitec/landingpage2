@@ -7,12 +7,10 @@ h1, h2, h3, h4, h5, h6, p, div {
   text-align: center;
   line-height: 1.8em;
   font-family: "Hiragino Sans",sans-serif;
+  color: #4D4D4D;
 }
 li {
   list-style: none;
-}
-* {
-  box-sizing: border-box;
 }
 body {
   position: relative;
@@ -21,21 +19,12 @@ body {
 }
 .container {
   max-width: 1200px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 /* クリアタグfloat解除 */
 .clear {
   clear: left;
-}
-/* 背景z-index固定 */
-.background {
-  z-index: -10;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-image: url(../image/background_1.jpg);
-  background-size: cover;
 }
 /* 見出し */
 .index {
@@ -44,37 +33,19 @@ body {
 h2 {
   display: inline-block;
   padding: 13px 18px;
-  background-color: #305089;
-  box-shadow: 5px 5px #aeb5dc;
   letter-spacing: 3px;
   font-size: 30px;
   font-weight: bold;
-  color: #fff;
 }
 h3 {
-  margin: 10px;
-  line-height: 30px;
-  font-weight: bold;
-  font-size: 25px;
 }
 h4 {
-  margin-top: 5px;
-  padding: 5px;
-  line-height: 25px;
-  text-decoration: underline;
-  font-size: 20px;
 }
 h5 {
-  margin-top: 5px;
-  padding: 5px;
 }
 /* ボックス*/
 .item {
   padding: 15px;
-  width: 40%;
-  background-color: rgba(234, 246, 253, .8);
-  border: 2px solid #3b82c4;
-  border-radius: 10px;
 }
 /* ボタン */
 .button {
@@ -118,7 +89,7 @@ span.underline {
   z-index: 20;
   position: fixed;
   height: 65px;
-  background-color: rgba(34, 49, 52, .9);
+  background-color: rgba(240, 240, 240, .9);
 }
 .header .logo {
   float: left;
@@ -134,7 +105,7 @@ span.underline {
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 4px;
-  color: #fff;
+  color: #111;
 }
 /* スクロール時メニュー消す・出現させる */
 .hide{
@@ -153,7 +124,7 @@ span.underline {
 .header li{
   padding: 0 17px;
   line-height: 65px;
-  color: #fff;
+  color: #111;
 }
 /* ハンバーガーメニュー初期非表示 */
 .burgerButton {
@@ -177,133 +148,64 @@ span.underline {
 /* トップ画面 */
 .topview {
   height: 100vh;
-  background-image: url(../image/topview_for_pc.jpg);
+  background-image: url(../image/topview.jpg);
   background-size: cover;
 }
-.topview .subtitle {
-  padding-top: 15vh;
-}
-.topview .subtitle p {
-  display: inline-block;
-  line-height: 42px;
-  letter-spacing: 3px;
-  color: #ab0f50;
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  text-shadow: 0px 0px 20px #fff;
-}
-.topview .top {
-  margin-top: 10vh;
-}
-.topview h1 {
-  display: inline-block;
-  padding:10px 20px;
-  box-shadow: 7px 7px #d7cebb ;
-  line-height: 50px;
-  background-color: #fcc9ac;
-  letter-spacing: 4px;
-  color: #4a387c;
-  font-size: 30px;
-  font-weight: bold;
-}
-.topview .limitedTime {
-  margin-top: 8vh;
-}
-.topview .limitedTime p {
-  display: inline-block;
-  padding: 15px;
-  background-color: rgba(255, 255, 255, .8);
-  line-height: 38px;
-  border-radius: 10px;
-  letter-spacing: 2px;
-}
-
-/* 悩み */
-.problem .problemBox {
-  display: flex;
-  justify-content: center;
-}
-.problem .thinking {
-  width: 20%;
-}
-.problem .problems {
-  width: 70%;
-}
-.problem .problems .item {
-  width: 90%;
-  margin: 10px auto;
-}
-.problem .problems p {
-  line-height: 27px;
-}
-
-/* 問題解決 */
-.solution .solutionView img {
-  width: 50%;
-}
-.solution .solutions {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-.solution .solutions h3 {
-  color: red;
-}
-.solution .solutions .item {
-  width: 30%;
-}
-
-/* プロフィール */
-.profile .toptext {
-  margin: 20px auto;
-  font-size: 24px;
-  letter-spacing: 3px;
-}
-.profile .profileBox {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.profile .profileImage {
-  width: 35%;
-}
-.profile .profileImage img {
-  border-radius: 50%;
-}
-.profile .profileItems {
-  width: 60%;
-}
-.profile .hobby {
-  margin-top: 20px;
-}
-.profile .hobby li {
-  padding: 5px;
-  line-height: 30px;
-}
-.profile .history {
-  margin-top: 20px;
-}
-.profile .history table {
-  margin: 0 auto;
-  word-wrap: break-word;
-  vertical-align: middle;
-}
-.profile .history td {
-  padding: 5px 10px;
-  line-height: 35px;
-  border: 2px solid rgb(128, 128, 128);
-}
-.profile .history .school {
-  width: 15%;
-}
-.profile .history .place {
-  width: 10%;
-}
-.profile .history .memory {
-  width: 75%;
+.topview .title {
+  padding-top: 38.2vh;
   text-align: left;
 }
+.topview h1 {
+  line-height: 50px;
+  text-align: left;
+  letter-spacing: 4px;
+  color: #ededed;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* 概要 */
+.concept .index {
+  text-align: left;
+}
+.concept h2 {
+  background: linear-gradient(transparent 50%, #d6E7ff 70%, transparent 70%);
+}
+.concept .conceptTop p {
+  font-size: 30px;
+}
+.concept .box {
+  position: relative;
+  margin-top: 50px;
+}
+.concept .conceptView {
+  display: inline-block;
+  float: left;
+  width:50%;
+  margin:50px auto auto 10%;
+}
+.concept .conceptView img {
+  width: 100%;
+}
+.concept .conceptText {
+  float: right;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.7);
+}
+.concept .conceptText p {
+  text-align: left;
+}
+.concept .belowIndex {
+  padding-right: 10%;
+}
+.concept .belowIndex p {
+  text-align: right;
+  font-size: 30px;
+}
+
 
 /* サービス */
 .service .serviceBox {
